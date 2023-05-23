@@ -1,0 +1,23 @@
+{
+	"references": [{ "path": "./tsconfig.node.json" }],
+	"compilerOptions": {
+		"target": "ESNext",
+		"useDefineForClassFields": true,
+		"allowSyntheticDefaultImports": true,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"strict": true,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/components/d3/Scrubber.ts"]
+}
